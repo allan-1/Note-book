@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    font-family: 'Commissioner', sans-serif;
+    background: linear-gradient(120deg, #d2f5e3, #d9e4dd);
+}
+header, form, .note-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header{
+    flex-direction: column;
+    min-height: 25vh;
+    font-size: 1.5rem;
+}
+header h3{
+    color: green;
+}
+label{
+    font-weight: 500;
+    padding: 0.6rem;
+    font-size: 1.2rem;
+}
+form textarea{
+    width: 40%;
+    height: 7rem;
+    padding: 0.4rem;
+    color: black;
+    font-size: 1.1rem;
+    font-weight: 500;
+    background-color: #f4d9c6;
+    border: none;
+}
+.note-button button{
+    background-color: green;
+    color: white;
+    border: none;
+    margin-top: 0.6rem;
+    width: 5rem;
+    height: 2rem;
+    font-size: 1rem;
+    padding: 0.2rem;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px 2px rgba(22, 218, 16, 0.2);
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+.note-button button:hover{
+    opacity: 0.7;
+    box-shadow: none;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 2rem;
+    margin: 4rem;
+}
+.container-text{
+    /* background: linear-gradient(60deg, #01c5c4, #b8de6f); */
+    background-color: #f4d9c6;
+    padding: 1rem;
+    font-size: 1.2rem;
+    color: black;
+}
+.container-text p{
+    color: black;
+}
+.trash-button{
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: black;
+    padding: 0.3rem;
+    margin: 1rem 0.3rem 0;
+    cursor: pointer;
+    transition: all 0.5s ease-in;
+}
+.trash-button:hover{
+    background: none;
+    color: red;
+}
+.fa-trash{
+    pointer-events: none;
+}
+.delete{
+    transform: rotate(60deg);
+    opacity: 0.5;
+    transition: all 0.3s ease-out;
+}
