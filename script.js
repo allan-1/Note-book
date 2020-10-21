@@ -42,7 +42,7 @@ function deleteNote(evt) {
     }
 }
 
-// copied code
+// Saving the notes to local disk
 function saveLocalNotes(note) {
     // check -- do I have note already
     let notes;
